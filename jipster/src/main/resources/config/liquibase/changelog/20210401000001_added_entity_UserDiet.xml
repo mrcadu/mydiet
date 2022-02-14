@@ -20,6 +20,39 @@
             <column name="password" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="age" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="genre" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="biotype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="goal" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="weight" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="height" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="neck" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="waist" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="hip" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="body_fat" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="diet_id" type="bigint">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_user_diet__diet_id" />
+            </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
     </changeSet>

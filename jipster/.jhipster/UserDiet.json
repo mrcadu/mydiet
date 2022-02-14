@@ -11,9 +11,59 @@
     {
       "fieldName": "password",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "biotype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "goal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "height",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "neck",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "waist",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hip",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bodyFat",
+      "fieldType": "Integer"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "diet",
+      "otherEntityName": "diet",
+      "relationshipType": "one-to-one",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "id": false,
+      "otherEntityRelationshipName": "userDiet"
+    }
+  ],
   "entityType": "domain",
   "service": "serviceClass",
   "dto": "mapstruct",

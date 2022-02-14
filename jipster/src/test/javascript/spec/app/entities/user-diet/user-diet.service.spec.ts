@@ -29,7 +29,7 @@ describe('Service Tests', () => {
 
     beforeEach(() => {
       service = new UserDietService();
-      elemDefault = new UserDiet(0, 'AAAAAAA', 'AAAAAAA');
+      elemDefault = new UserDiet(0, 'AAAAAAA', 'AAAAAAA', 0, 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 0, 0, 0, 0, 0, 0);
     });
 
     describe('Service methods', () => {
@@ -57,6 +57,16 @@ describe('Service Tests', () => {
           {
             username: 'BBBBBB',
             password: 'BBBBBB',
+            age: 1,
+            genre: 'BBBBBB',
+            biotype: 'BBBBBB',
+            goal: 'BBBBBB',
+            weight: 1,
+            height: 1,
+            neck: 1,
+            waist: 1,
+            hip: 1,
+            bodyFat: 1,
           },
           elemDefault
         );

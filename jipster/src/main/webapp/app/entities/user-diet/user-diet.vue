@@ -19,6 +19,17 @@
             <th scope="row"><span>ID</span></th>
             <th scope="row"><span>Username</span></th>
             <th scope="row"><span>Password</span></th>
+            <th scope="row"><span>Age</span></th>
+            <th scope="row"><span>Genre</span></th>
+            <th scope="row"><span>Biotype</span></th>
+            <th scope="row"><span>Goal</span></th>
+            <th scope="row"><span>Weight</span></th>
+            <th scope="row"><span>Height</span></th>
+            <th scope="row"><span>Neck</span></th>
+            <th scope="row"><span>Waist</span></th>
+            <th scope="row"><span>Hip</span></th>
+            <th scope="row"><span>Body Fat</span></th>
+            <th scope="row"><span>Diet</span></th>
             <th scope="row"></th>
           </tr>
         </thead>
@@ -29,6 +40,21 @@
             </td>
             <td>{{ userDiet.username }}</td>
             <td>{{ userDiet.password }}</td>
+            <td>{{ userDiet.age }}</td>
+            <td>{{ userDiet.genre }}</td>
+            <td>{{ userDiet.biotype }}</td>
+            <td>{{ userDiet.goal }}</td>
+            <td>{{ userDiet.weight }}</td>
+            <td>{{ userDiet.height }}</td>
+            <td>{{ userDiet.neck }}</td>
+            <td>{{ userDiet.waist }}</td>
+            <td>{{ userDiet.hip }}</td>
+            <td>{{ userDiet.bodyFat }}</td>
+            <td>
+              <div v-if="userDiet.diet">
+                <router-link :to="{ name: 'DietView', params: { dietId: userDiet.diet.id } }">{{ userDiet.diet.id }}</router-link>
+              </div>
+            </td>
             <td class="text-right">
               <div class="btn-group">
                 <router-link :to="{ name: 'UserDietView', params: { userDietId: userDiet.id } }" custom v-slot="{ navigate }">
