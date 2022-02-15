@@ -34,6 +34,7 @@ import UserDietService from '@/entities/user-diet/user-diet.service';
 import FoodService from '@/entities/food/food.service';
 import DietService from '@/entities/diet/diet.service';
 import MealService from '@/entities/meal/meal.service';
+import StoreUserDataProcessService from '@/entities/store-user-data-process/store-user-data-process.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -98,6 +99,7 @@ new Vue({
     foodService: () => new FoodService(),
     dietService: () => new DietService(),
     mealService: () => new MealService(),
+    storeUserDataProcessService: () => new StoreUserDataProcessService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

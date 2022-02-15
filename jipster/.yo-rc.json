@@ -53,6 +53,7 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["en", "fr"],
-    "entities": ["UserDiet", "Food", "Diet", "Meal"]
+    "entities": ["UserDiet", "Food", "Diet", "Meal"],
+    "lastLiquibaseTimestamp": 1644883342000
   }
 }

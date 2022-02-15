@@ -54,6 +54,7 @@ public class CacheConfiguration {
             createCache(cm, br.ufrj.diet.domain.Meal.class.getName());
             createCache(cm, br.ufrj.diet.domain.Meal.class.getName() + ".foods");
             createCache(cm, br.ufrj.diet.domain.Diet.class.getName() + ".meals");
+            createCache(cm, br.ufrj.diet.domain.StoreUserDataProcess.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

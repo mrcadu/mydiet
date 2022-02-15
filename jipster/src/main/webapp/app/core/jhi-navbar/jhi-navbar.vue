@@ -49,6 +49,22 @@
             <font-awesome-icon icon="asterisk" />
             <span>Meal</span>
           </b-dropdown-item>
+          <b-dropdown-item to="/user-diet">
+            <font-awesome-icon icon="asterisk" />
+            <span>User Diet</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/food">
+            <font-awesome-icon icon="asterisk" />
+            <span>Food</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/diet">
+            <font-awesome-icon icon="asterisk" />
+            <span>Diet</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/meal">
+            <font-awesome-icon icon="asterisk" />
+            <span>Meal</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown
