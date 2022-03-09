@@ -1,0 +1,28 @@
+{
+  "dietApp": {
+    "userDiet": {
+      "home": {
+        "title": "User Diets",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No User Diets found"
+      },
+      "detail": {
+        "title": "User Diet"
+      },
+      "id": "Id",
+      "username": "Username",
+      "password": "Password",
+      "age": "Age",
+      "genre": "Genre",
+      "biotype": "Biotype",
+      "goal": "Goal",
+      "weight": "Weight",
+      "height": "Height",
+      "neck": "Neck",
+      "waist": "Waist",
+      "hip": "Hip",
+      "bodyFat": "Body Fat",
+      "diet": "Diet"
+    }
+  }
+}

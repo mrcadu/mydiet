@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity StoreUserDataStartForm.
+    -->
+    <changeSet id="20220215000223-1" author="jhipster">
+        <createTable tableName="store_user_data_start_form">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="password" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="age" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="genre" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="biotype" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="goal" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="weight" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="height" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="neck" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="waist" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="hip" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="body_fat" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+</databaseChangeLog>
