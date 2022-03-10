@@ -30,6 +30,20 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('dietApp.addFoodDataProcess.username')">username</label>
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="username"
+                    id="food-username"
+                    data-cy="username"
+                    v-model="addFoodDataProcess.food.username"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label class="form-control-label" v-text="$t('dietApp.addFoodDataProcess.grams')">grams</label>
                   <input
                     readonly

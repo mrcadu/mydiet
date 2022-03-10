@@ -27,6 +27,10 @@
     {
       "fieldName": "calories",
       "fieldType": "Float"
+    },
+    {
+      "fieldName": "username",
+      "fieldType": "String"
     }
   ],
   "relationships": [

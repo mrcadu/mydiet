@@ -16,6 +16,7 @@
       "carbohydrate": "Carbohydrate",
       "fat": "Fat",
       "calories": "Calories",
+      "username": "Username",
       "meal": "Meal"
     }
   }

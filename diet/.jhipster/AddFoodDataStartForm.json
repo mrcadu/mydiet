@@ -5,6 +5,10 @@
       "fieldType": "String"
     },
     {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "grams",
       "fieldType": "Float"
     },

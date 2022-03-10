@@ -24,6 +24,7 @@
             <th scope="row"><span v-text="$t('dietApp.food.carbohydrate')">Carbohydrate</span></th>
             <th scope="row"><span v-text="$t('dietApp.food.fat')">Fat</span></th>
             <th scope="row"><span v-text="$t('dietApp.food.calories')">Calories</span></th>
+            <th scope="row"><span v-text="$t('dietApp.food.username')">Username</span></th>
             <th scope="row"><span v-text="$t('dietApp.food.meal')">Meal</span></th>
             <th scope="row"></th>
           </tr>
@@ -39,6 +40,7 @@
             <td>{{ food.carbohydrate }}</td>
             <td>{{ food.fat }}</td>
             <td>{{ food.calories }}</td>
+            <td>{{ food.username }}</td>
             <td>
               <div v-if="food.meal">
                 <router-link :to="{ name: 'MealView', params: { mealId: food.meal.id } }">{{ food.meal.id }}</router-link>

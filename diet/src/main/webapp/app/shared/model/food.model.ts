@@ -8,6 +8,7 @@ export interface IFood {
   carbohydrate?: number | null;
   fat?: number | null;
   calories?: number | null;
+  username?: string | null;
   meal?: IMeal | null;
 }
 
@@ -20,6 +21,7 @@ export class Food implements IFood {
     public carbohydrate?: number | null,
     public fat?: number | null,
     public calories?: number | null,
+    public username?: string | null,
     public meal?: IMeal | null
   ) {}
 }

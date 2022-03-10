@@ -49,6 +49,9 @@ class FoodResourceIT {
     private static final Float DEFAULT_CALORIES = 1F;
     private static final Float UPDATED_CALORIES = 2F;
 
+    private static final String DEFAULT_USERNAME = "AAAAAAAAAA";
+    private static final String UPDATED_USERNAME = "BBBBBBBBBB";
+
     private static final String ENTITY_API_URL = "/api/foods";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -82,7 +85,8 @@ class FoodResourceIT {
             .protein(DEFAULT_PROTEIN)
             .carbohydrate(DEFAULT_CARBOHYDRATE)
             .fat(DEFAULT_FAT)
-            .calories(DEFAULT_CALORIES);
+            .calories(DEFAULT_CALORIES)
+            .username(DEFAULT_USERNAME);
         return food;
     }
 
@@ -99,7 +103,8 @@ class FoodResourceIT {
             .protein(UPDATED_PROTEIN)
             .carbohydrate(UPDATED_CARBOHYDRATE)
             .fat(UPDATED_FAT)
-            .calories(UPDATED_CALORIES);
+            .calories(UPDATED_CALORIES)
+            .username(UPDATED_USERNAME);
         return food;
     }
 
@@ -125,7 +130,8 @@ class FoodResourceIT {
             .andExpect(jsonPath("$.[*].protein").value(hasItem(DEFAULT_PROTEIN.doubleValue())))
             .andExpect(jsonPath("$.[*].carbohydrate").value(hasItem(DEFAULT_CARBOHYDRATE.doubleValue())))
             .andExpect(jsonPath("$.[*].fat").value(hasItem(DEFAULT_FAT.doubleValue())))
-            .andExpect(jsonPath("$.[*].calories").value(hasItem(DEFAULT_CALORIES.doubleValue())));
+            .andExpect(jsonPath("$.[*].calories").value(hasItem(DEFAULT_CALORIES.doubleValue())))
+            .andExpect(jsonPath("$.[*].username").value(hasItem(DEFAULT_USERNAME)));
     }
 
     @Test
@@ -145,7 +151,8 @@ class FoodResourceIT {
             .andExpect(jsonPath("$.protein").value(DEFAULT_PROTEIN.doubleValue()))
             .andExpect(jsonPath("$.carbohydrate").value(DEFAULT_CARBOHYDRATE.doubleValue()))
             .andExpect(jsonPath("$.fat").value(DEFAULT_FAT.doubleValue()))
-            .andExpect(jsonPath("$.calories").value(DEFAULT_CALORIES.doubleValue()));
+            .andExpect(jsonPath("$.calories").value(DEFAULT_CALORIES.doubleValue()))
+            .andExpect(jsonPath("$.username").value(DEFAULT_USERNAME));
     }
 
     @Test

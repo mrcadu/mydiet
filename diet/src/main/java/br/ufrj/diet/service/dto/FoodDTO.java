@@ -22,6 +22,8 @@ public class FoodDTO implements Serializable {
 
     private Float calories;
 
+    private String username;
+
     private MealDTO meal;
 
     public Long getId() {
@@ -80,6 +82,14 @@ public class FoodDTO implements Serializable {
         this.calories = calories;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public MealDTO getMeal() {
         return meal;
     }
@@ -120,6 +130,7 @@ public class FoodDTO implements Serializable {
             ", carbohydrate=" + getCarbohydrate() +
             ", fat=" + getFat() +
             ", calories=" + getCalories() +
+            ", username='" + getUsername() + "'" +
             ", meal=" + getMeal() +
             "}";
     }

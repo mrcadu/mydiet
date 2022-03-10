@@ -43,6 +43,12 @@
             <span>{{ food.calories }}</span>
           </dd>
           <dt>
+            <span v-text="$t('dietApp.food.username')">Username</span>
+          </dt>
+          <dd>
+            <span>{{ food.username }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('dietApp.food.meal')">Meal</span>
           </dt>
           <dd>

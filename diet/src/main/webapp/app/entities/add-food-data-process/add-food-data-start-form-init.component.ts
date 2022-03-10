@@ -11,6 +11,7 @@ const validations: any = {
   addFoodDataProcess: {
     food: {
       name: {},
+      username: {},
       grams: {},
       protein: {},
       carbohydrate: {},

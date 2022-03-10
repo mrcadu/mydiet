@@ -39,6 +39,9 @@ public class Food implements Serializable {
     @Column(name = "calories")
     private Float calories;
 
+    @Column(name = "username")
+    private String username;
+
     @ManyToOne
     @JsonIgnoreProperties(value = { "foods", "diet" }, allowSetters = true)
     private Meal meal;
@@ -135,6 +138,19 @@ public class Food implements Serializable {
         this.calories = calories;
     }
 
+    public String getUsername() {
+        return this.username;
+    }
+
+    public Food username(String username) {
+        this.username = username;
+        return this;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public Meal getMeal() {
         return this.meal;
     }
@@ -178,6 +194,7 @@ public class Food implements Serializable {
             ", carbohydrate=" + getCarbohydrate() +
             ", fat=" + getFat() +
             ", calories=" + getCalories() +
+            ", username='" + getUsername() + "'" +
             "}";
     }
 }

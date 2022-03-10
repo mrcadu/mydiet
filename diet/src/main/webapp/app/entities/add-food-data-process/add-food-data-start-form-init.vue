@@ -29,6 +29,23 @@
                   />
                 </div>
                 <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('dietApp.addFoodDataStartForm.username')"
+                    for="add-food-data-start-form-username"
+                    >Username</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="username"
+                    id="add-food-data-start-form-username"
+                    data-cy="username"
+                    :class="{ valid: !$v.addFoodDataProcess.food.username.$invalid, invalid: $v.addFoodDataProcess.food.username.$invalid }"
+                    v-model="$v.addFoodDataProcess.food.username.$model"
+                  />
+                </div>
+                <div class="form-group">
                   <label class="form-control-label" v-text="$t('dietApp.addFoodDataStartForm.grams')" for="add-food-data-start-form-grams"
                     >Grams</label
                   >

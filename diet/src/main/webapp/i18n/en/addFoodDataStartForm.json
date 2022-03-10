@@ -19,6 +19,7 @@
       },
       "id": "ID",
       "name": "Name",
+      "username": "Username",
       "grams": "Grams",
       "protein": "Protein",
       "carbohydrate": "Carbohydrate",

@@ -17,6 +17,9 @@
             <column name="name" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="username" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="grams" type="${floatType}">
                 <constraints nullable="true" />
             </column>

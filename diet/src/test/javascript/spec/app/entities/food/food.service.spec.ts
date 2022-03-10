@@ -29,7 +29,7 @@ describe('Service Tests', () => {
 
     beforeEach(() => {
       service = new FoodService();
-      elemDefault = new Food(0, 'AAAAAAA', 0, 0, 0, 0, 0);
+      elemDefault = new Food(0, 'AAAAAAA', 0, 0, 0, 0, 0, 'AAAAAAA');
     });
 
     describe('Service methods', () => {
@@ -61,6 +61,7 @@ describe('Service Tests', () => {
             carbohydrate: 1,
             fat: 1,
             calories: 1,
+            username: 'BBBBBB',
           },
           elemDefault
         );
