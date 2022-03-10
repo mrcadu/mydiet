@@ -1,0 +1,29 @@
+{
+  "dietApp": {
+    "addFoodDataProcess": {
+      "home": {
+        "title": "Add Food Data Processes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Add Food Data Process",
+        "createOrEditLabel": "Create or edit a Add Food Data Process",
+        "notFound": "No Add Food Data Processes found"
+      },
+      "created": "A new Add Food Data Process is created with identifier {{ param }}",
+      "updated": "A Add Food Data Process is updated with identifier {{ param }}",
+      "deleted": "A Add Food Data Process is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Add Food Data Process {{ id }}?"
+      },
+      "detail": {
+        "title": "Add Food Data Process"
+      },
+      "id": "ID",
+      "name": "Name",
+      "grams": "Grams",
+      "protein": "Protein",
+      "carbohydrate": "Carbohydrate",
+      "fat": "Fat",
+      "calories": "Calories"
+    }
+  }
+}

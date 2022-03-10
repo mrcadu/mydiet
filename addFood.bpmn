@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0c7hf04" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.12.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.15.0">
+  <bpmn:collaboration id="Collaboration_0bnltaf">
+    <bpmn:participant id="Participant_1vxonfg" processRef="AddFoodDataProcess" />
+  </bpmn:collaboration>
+  <bpmn:process id="AddFoodDataProcess" name="AddFoodDataProcess" isExecutable="true">
+    <bpmn:startEvent id="Event_1y5ebgo">
+      <bpmn:outgoing>Flow_0068ll6</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_17aocud" name="Controlar dieta">
+      <bpmn:incoming>Flow_1jhc0rh</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="TaskAdicionarAlimento" name="Adicionar alimento">
+      <bpmn:incoming>Flow_0068ll6</bpmn:incoming>
+      <bpmn:outgoing>Flow_1jhc0rh</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_1jhc0rh" sourceRef="TaskAdicionarAlimento" targetRef="Event_17aocud" />
+    <bpmn:sequenceFlow id="Flow_0068ll6" sourceRef="Event_1y5ebgo" targetRef="TaskAdicionarAlimento" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0bnltaf">
+      <bpmndi:BPMNShape id="Participant_1vxonfg_di" bpmnElement="Participant_1vxonfg" isHorizontal="true">
+        <dc:Bounds x="128" y="79" width="750" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1jhc0rh_di" bpmnElement="Flow_1jhc0rh">
+        <di:waypoint x="536" y="169" />
+        <di:waypoint x="788" y="169" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0068ll6_di" bpmnElement="Flow_0068ll6">
+        <di:waypoint x="214" y="169" />
+        <di:waypoint x="436" y="169" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_1y5ebgo_di" bpmnElement="Event_1y5ebgo">
+        <dc:Bounds x="178" y="151" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_17aocud_di" bpmnElement="Event_17aocud">
+        <dc:Bounds x="788" y="151" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="770" y="194" width="73" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TaskAdicionarAlimento_di" bpmnElement="TaskAdicionarAlimento">
+        <dc:Bounds x="436" y="129" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,18 @@
+{
+  "dietApp": {
+    "meal": {
+      "home": {
+        "title": "Meals",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Meals found"
+      },
+      "detail": {
+        "title": "Meal"
+      },
+      "id": "Id",
+      "name": "Name",
+      "foods": "Foods",
+      "diet": "Diet"
+    }
+  }
+}

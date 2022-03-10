@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1i627ws" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <bpmn:collaboration id="Collaboration_03mij1y">
+    <bpmn:participant id="Participant_1qcj1h4" processRef="StoreUserDataProcess" />
+  </bpmn:collaboration>
+  <bpmn:process id="StoreUserDataProcess" name="StoreUserDataProcess" isExecutable="true">
+    <bpmn:startEvent id="Event_12usiqe">
+      <bpmn:outgoing>Flow_0hnvpv7</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_010ftpb" name="Registrar dados para dieta">
+      <bpmn:incoming>Flow_1y54h3d</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1y54h3d" sourceRef="TaskRegistrarDados" targetRef="Event_010ftpb" />
+    <bpmn:sequenceFlow id="Flow_0hnvpv7" sourceRef="Event_12usiqe" targetRef="TaskRegistrarDados" />
+    <bpmn:userTask id="TaskRegistrarDados" name="Registrar informações do usuário para dieta">
+      <bpmn:incoming>Flow_0hnvpv7</bpmn:incoming>
+      <bpmn:outgoing>Flow_1y54h3d</bpmn:outgoing>
+    </bpmn:userTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_03mij1y">
+      <bpmndi:BPMNShape id="Participant_1qcj1h4_di" bpmnElement="Participant_1qcj1h4" isHorizontal="true">
+        <dc:Bounds x="160" y="60" width="748" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0hnvpv7_di" bpmnElement="Flow_0hnvpv7">
+        <di:waypoint x="248" y="120" />
+        <di:waypoint x="480" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1y54h3d_di" bpmnElement="Flow_1y54h3d">
+        <di:waypoint x="580" y="120" />
+        <di:waypoint x="832" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_12usiqe_di" bpmnElement="Event_12usiqe">
+        <dc:Bounds x="212" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_010ftpb_di" bpmnElement="Event_010ftpb">
+        <dc:Bounds x="832" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="811" y="145" width="79" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_005fc6j_di" bpmnElement="TaskRegistrarDados">
+        <dc:Bounds x="480" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

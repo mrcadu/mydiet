@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "grams",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "protein",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "carbohydrate",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "fat",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "calories",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [],
+  "entityType": "process-binding",
+  "processBpmnId": "AddFoodDataProcess",
+  "domainEntityName": "Food",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "AddFoodDataProcess",
+  "changelogDate": "20220215000222"
+}

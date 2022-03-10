@@ -1,0 +1,35 @@
+{
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "foods",
+      "otherEntityName": "food",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "meal"
+    },
+    {
+      "relationshipName": "diet",
+      "otherEntityName": "diet",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "Meal",
+  "changelogDate": "20210401000001",
+  "skipFakeData": true
+}

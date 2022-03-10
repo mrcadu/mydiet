@@ -1,0 +1,65 @@
+{
+  "fields": [
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "biotype",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "goal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "height",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "neck",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "waist",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hip",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bodyFat",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "StoreUserDataProcess",
+  "processEntityName": "StoreUserDataProcess",
+  "domainEntityName": "UserDiet",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "StoreUserDataStartForm",
+  "changelogDate": "20220215000223",
+  "skipFakeData": true
+}
